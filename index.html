@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ─── EDIT: page metadata ─────────────────────────────────────────── -->
+<title>Sandeep Rathore — Software Developer</title>
+<meta name="description" content="Software developer building reliable backends, clean interfaces, and tools people actually use.">
+<meta name="author" content="Sandeep Rathore">
+
+<!-- Social preview. Replace the URL once you know your Pages address. -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sandeep Rathore — Software Developer">
+<meta property="og:description" content="Software developer building reliable backends, clean interfaces, and tools people actually use.">
+<meta property="og:url" content="https://sandeeprathore.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<!-- ─────────────────────────────────────────────────────────────────── -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌘</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script>
+  // Runs before first paint: picks the saved theme (or the OS one) so the
+  // page never flashes the wrong colours, and unhides JS-driven animations.
+  (function () {
+    var root = document.documentElement;
+    root.classList.remove('no-js');
+    var stored = null;
+    try { stored = localStorage.getItem('theme'); } catch (e) { /* storage blocked */ }
+    var dark = stored ? stored === 'dark'
+                      : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    root.setAttribute('data-theme', dark ? 'dark' : 'light');
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#work">Skip to work</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__mark" href="#top">SR</a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#stack">Stack</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="themetoggle" id="themetoggle" type="button" aria-label="Switch colour theme">
+      <span class="themetoggle__icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ══ HERO ══════════════════════════════════════════════════════════ -->
+  <section class="hero wrap">
+    <p class="eyebrow reveal">Software Developer</p>
+
+    <!-- EDIT: your name -->
+    <h1 class="hero__name reveal">Sandeep<br>Rathore</h1>
+
+    <!-- EDIT: one or two sentences. Say what you build and who for. -->
+    <p class="hero__lede reveal">
+      I build backend systems and the interfaces that sit on top of them —
+      focused on the unglamorous parts that decide whether software holds up:
+      data models, failure modes, and latency.
+    </p>
+
+    <!-- EDIT: your links. Delete any you don't want. -->
+    <div class="hero__links reveal">
+      <a class="btn btn--primary" href="mailto:sandeeprathore9211@gmail.com">Get in touch</a>
+      <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="assets/resume.pdf">Résumé</a>
+    </div>
+
+    <!-- EDIT: three numbers worth bragging about, or delete this block. -->
+    <dl class="stats reveal">
+      <div class="stat"><dt>Years shipping</dt><dd>5+</dd></div>
+      <div class="stat"><dt>Systems in production</dt><dd>12</dd></div>
+      <div class="stat"><dt>Open-source repos</dt><dd>20+</dd></div>
+    </dl>
+  </section>
+
+  <!-- ══ WORK ══════════════════════════════════════════════════════════ -->
+  <section class="section wrap" id="work">
+    <h2 class="section__title reveal"><span class="section__num">01</span> Selected work</h2>
+
+    <ol class="projects">
+
+      <!-- ── PROJECT: copy this whole <li> block to add another ───────── -->
+      <li class="project reveal">
+        <a class="project__link" href="https://github.com/" target="_blank" rel="noopener">
+          <div class="project__head">
+            <h3 class="project__title">Realtime Sync Engine</h3>
+            <span class="project__year">2025</span>
+          </div>
+          <p class="project__desc">
+            Conflict-free document sync for a collaborative editor. CRDT-backed,
+            with an append-only op log and a replay tool that made debugging
+            merge bugs a five-minute job instead of a five-hour one.
+          </p>
+          <ul class="tags">
+            <li>TypeScript</li><li>Node</li><li>WebSocket</li><li>Postgres</li>
+          </ul>
+          <span class="project__cta">View repository <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+      <!-- ─────────────────────────────────────────────────────────────── -->
+
+      <li class="project reveal">
+        <a class="project__link" href="https://github.com/" target="_blank" rel="noopener">
+          <div class="project__head">
+            <h3 class="project__title">Ledger Service</h3>
+            <span class="project__year">2024</span>
+          </div>
+          <p class="project__desc">
+            Double-entry accounting service handling payment reconciliation.
+            Idempotent writes, strict invariants enforced at the database level,
+            and a property-test suite that has caught every regression so far.
+          </p>
+          <ul class="tags">
+            <li>Go</li><li>Postgres</li><li>gRPC</li><li>Kafka</li>
+          </ul>
+          <span class="project__cta">View repository <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+
+      <li class="project reveal">
+        <a class="project__link" href="https://github.com/" target="_blank" rel="noopener">
+          <div class="project__head">
+            <h3 class="project__title">Query Console</h3>
+            <span class="project__year">2024</span>
+          </div>
+          <p class="project__desc">
+            Internal analytics console that let non-engineers answer their own
+            questions. Schema-aware autocomplete, saved queries, and result
+            caching that cut the average warehouse bill by a third.
+          </p>
+          <ul class="tags">
+            <li>React</li><li>Python</li><li>DuckDB</li><li>Redis</li>
+          </ul>
+          <span class="project__cta">View repository <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+
+      <li class="project reveal">
+        <a class="project__link" href="https://github.com/" target="_blank" rel="noopener">
+          <div class="project__head">
+            <h3 class="project__title">Deploy Bot</h3>
+            <span class="project__year">2023</span>
+          </div>
+          <p class="project__desc">
+            A CLI and Slack bot that turned a 14-step release checklist into one
+            command, with automatic rollback on failed health checks. Adopted by
+            every team in the org within a quarter.
+          </p>
+          <ul class="tags">
+            <li>Rust</li><li>Docker</li><li>GitHub Actions</li>
+          </ul>
+          <span class="project__cta">View repository <span aria-hidden="true">→</span></span>
+        </a>
+      </li>
+
+    </ol>
+
+    <p class="section__more reveal">
+      <a href="https://github.com/" target="_blank" rel="noopener">Everything else on GitHub <span aria-hidden="true">→</span></a>
+    </p>
+  </section>
+
+  <!-- ══ ABOUT ═════════════════════════════════════════════════════════ -->
+  <section class="section wrap" id="about">
+    <h2 class="section__title reveal"><span class="section__num">02</span> About</h2>
+    <div class="prose reveal">
+      <!-- EDIT: two or three short paragraphs. Write like you talk. -->
+      <p>
+        I'm a software developer who likes problems with a correct answer —
+        the kind where you can write the test first and know when you're done.
+        Most of my work has been backend: APIs, data pipelines, and the
+        infrastructure that keeps them upright.
+      </p>
+      <p>
+        I care about code that the next person can read. That usually means
+        fewer abstractions than feel clever at the time, names that say what
+        they mean, and tests that describe behaviour rather than implementation.
+      </p>
+      <p>
+        Outside of work I read about distributed systems, maintain a few small
+        open-source tools, and am always happy to talk through a gnarly
+        architecture problem.
+      </p>
+    </div>
+  </section>
+
+  <!-- ══ STACK ═════════════════════════════════════════════════════════ -->
+  <section class="section wrap" id="stack">
+    <h2 class="section__title reveal"><span class="section__num">03</span> Stack</h2>
+
+    <!-- EDIT: your actual tools. Keep the groups honest — three is plenty. -->
+    <div class="stackgrid">
+      <div class="stackgroup reveal">
+        <h3>Languages</h3>
+        <ul><li>TypeScript</li><li>Python</li><li>Go</li><li>Rust</li><li>SQL</li></ul>
+      </div>
+      <div class="stackgroup reveal">
+        <h3>Frameworks</h3>
+        <ul><li>React</li><li>Next.js</li><li>Node</li><li>FastAPI</li><li>Express</li></ul>
+      </div>
+      <div class="stackgroup reveal">
+        <h3>Data</h3>
+        <ul><li>Postgres</li><li>Redis</li><li>Kafka</li><li>DuckDB</li><li>Elasticsearch</li></ul>
+      </div>
+      <div class="stackgroup reveal">
+        <h3>Infrastructure</h3>
+        <ul><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>Terraform</li><li>GitHub Actions</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ════════════════════════════════════════════════════ -->
+  <section class="section wrap" id="experience">
+    <h2 class="section__title reveal"><span class="section__num">04</span> Experience</h2>
+
+    <ol class="timeline">
+      <!-- ── ROLE: copy this <li> to add another ──────────────────────── -->
+      <li class="role reveal">
+        <div class="role__when">2023 — Present</div>
+        <div class="role__what">
+          <h3>Senior Software Engineer</h3>
+          <p class="role__where">Company Name</p>
+          <p class="role__desc">
+            Own the payments and reconciliation services. Led the migration off
+            a monolithic billing job to an event-driven ledger, cutting
+            month-end close from three days to four hours.
+          </p>
+        </div>
+      </li>
+      <!-- ─────────────────────────────────────────────────────────────── -->
+
+      <li class="role reveal">
+        <div class="role__when">2021 — 2023</div>
+        <div class="role__what">
+          <h3>Software Engineer</h3>
+          <p class="role__where">Company Name</p>
+          <p class="role__desc">
+            Built and ran the internal data platform. Shipped the query console
+            that eventually replaced most of the analytics team's ticket queue.
+          </p>
+        </div>
+      </li>
+
+      <li class="role reveal">
+        <div class="role__when">2020 — 2021</div>
+        <div class="role__what">
+          <h3>Junior Developer</h3>
+          <p class="role__where">Company Name</p>
+          <p class="role__desc">
+            Full-stack product work on a customer-facing React app. Learned more
+            from the code reviews here than from anything since.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ══ CONTACT ═══════════════════════════════════════════════════════ -->
+  <section class="section wrap" id="contact">
+    <h2 class="section__title reveal"><span class="section__num">05</span> Contact</h2>
+    <div class="contact reveal">
+      <p class="contact__lede">
+        Open to interesting problems, contract work, and the occasional
+        long conversation about database indexes.
+      </p>
+      <!-- EDIT: your email -->
+      <a class="contact__mail" href="mailto:sandeeprathore9211@gmail.com">sandeeprathore9211@gmail.com</a>
+      <div class="hero__links">
+        <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://x.com/" target="_blank" rel="noopener">X ↗</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <span>© <span id="year">2026</span> Sandeep Rathore</span>
+  <span class="footer__note">Built by hand. Hosted on GitHub Pages.</span>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

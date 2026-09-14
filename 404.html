@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Not found — Sandeep Rathore</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌘</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+  .oops {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-block: 4rem;
+  }
+</style>
+<script>
+  (function () {
+    var root = document.documentElement;
+    root.classList.remove('no-js');
+    var stored = null;
+    try { stored = localStorage.getItem('theme'); } catch (e) { /* storage blocked */ }
+    var dark = stored ? stored === 'dark'
+                      : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    root.setAttribute('data-theme', dark ? 'dark' : 'light');
+  })();
+</script>
+</head>
+<body>
+  <main class="wrap oops">
+    <p class="eyebrow">Error 404</p>
+    <h1 class="hero__name" style="font-size: clamp(2.5rem, 9vw, 4.5rem);">Nothing<br>here</h1>
+    <p class="hero__lede">
+      That page doesn't exist — or it did once and doesn't any more.
+    </p>
+    <div class="hero__links">
+      <a class="btn btn--primary" href="./">Back to the start</a>
+    </div>
+  </main>
+</body>
+</html>
