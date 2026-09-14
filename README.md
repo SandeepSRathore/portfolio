@@ -25,8 +25,8 @@ python3 -m http.server 8000   # then visit http://localhost:8000
 Everything editable is marked with an `EDIT:` comment in `index.html`.
 Work through these in order:
 
-- [ ] **Metadata** — `<title>`, description, and the `og:url` (set it once you
-      know your Pages address).
+- [ ] **Metadata** — `<title>` and description. The `og:url` is already set to
+      https://sandeepsrathore.github.io/portfolio/ — update it if the repo moves.
 - [ ] **Hero** — your name, the one-paragraph pitch, and the link buttons.
       Replace the placeholder GitHub / LinkedIn URLs with real ones, and drop
       a `resume.pdf` into `assets/` or delete that button.
