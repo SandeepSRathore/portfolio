@@ -315,6 +315,11 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
 }
 .project__link:hover { background: var(--bg-raised); }
 
+/* Not every project has somewhere to send people. The static variant keeps
+   the same box but drops the affordances that promise a destination. */
+.project__link--static { cursor: default; }
+.project__link--static:hover { background: none; }
+
 .project__head {
   display: flex;
   align-items: baseline;
@@ -329,7 +334,7 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   letter-spacing: -0.02em;
   transition: color 0.2s;
 }
-.project__link:hover .project__title { color: var(--accent); }
+.project__link:not(.project__link--static):hover .project__title { color: var(--accent); }
 
 .project__year {
   flex-shrink: 0;
@@ -386,6 +391,15 @@ button { font: inherit; color: inherit; background: none; border: none; cursor: 
   color: var(--ink-mid);
   font-size: 1.0rem;
   text-wrap: pretty;
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--ink);
+  background: var(--accent-bg);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
 }
 
 /* ── Stack ───────────────────────────────────────────────────────────── */

@@ -6,13 +6,13 @@
 
 <!-- ─── EDIT: page metadata ─────────────────────────────────────────── -->
 <title>Sandeep Singh Rathore — Full Stack Software Engineer</title>
-<meta name="description" content="Full stack software engineer building reliable backends, clean interfaces, and tools people actually use.">
+<meta name="description" content="Senior Java and full stack engineer with 10+ years building enterprise platforms, microservices and AI-powered features across infrastructure, banking and healthcare.">
 <meta name="author" content="Sandeep Singh Rathore">
 
 <!-- Social preview. -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sandeep Singh Rathore — Full Stack Software Engineer">
-<meta property="og:description" content="Full stack software engineer building reliable backends, clean interfaces, and tools people actually use.">
+<meta property="og:description" content="Senior Java and full stack engineer with 10+ years building enterprise platforms, microservices and AI-powered features across infrastructure, banking and healthcare.">
 <meta property="og:url" content="https://sandeepsrathore.github.io/portfolio/">
 <meta name="twitter:card" content="summary_large_image">
 <!-- ─────────────────────────────────────────────────────────────────── -->
@@ -68,24 +68,25 @@
 
     <!-- EDIT: one or two sentences. Say what you build and who for. -->
     <p class="hero__lede reveal">
-      I build backend systems and the interfaces that sit on top of them —
-      focused on the unglamorous parts that decide whether software holds up:
-      data models, failure modes, and latency.
+      Ten years building enterprise platforms that have to stay up — Java
+      microservices, REST APIs, and the Angular consoles on top of them, across
+      datacenter infrastructure, banking and healthcare. Lately: putting LLMs
+      to work inside them.
     </p>
 
     <!-- EDIT: your links. Delete any you don't want. -->
     <div class="hero__links reveal">
       <a class="btn btn--primary" href="mailto:sandeeprathore9211@gmail.com">Get in touch</a>
-      <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
-      <a class="btn" href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="btn" href="assets/resume.pdf">Résumé</a>
+      <a class="btn" href="https://github.com/SandeepSRathore" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="https://linkedin.com/in/isandeeprathore" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="https://stackoverflow.com/users/6572971/sandeep" target="_blank" rel="noopener">Stack Overflow ↗</a>
     </div>
 
     <!-- EDIT: three numbers worth bragging about, or delete this block. -->
     <dl class="stats reveal">
-      <div class="stat"><dt>Years shipping</dt><dd>5+</dd></div>
-      <div class="stat"><dt>Systems in production</dt><dd>12</dd></div>
-      <div class="stat"><dt>Open-source repos</dt><dd>20+</dd></div>
+      <div class="stat"><dt>Years shipping</dt><dd>10+</dd></div>
+      <div class="stat"><dt>Servers under management</dt><dd>25k+</dd></div>
+      <div class="stat"><dt>Projects delivered</dt><dd>15+</dd></div>
     </dl>
   </section>
 
@@ -95,84 +96,135 @@
 
     <ol class="projects">
 
-      <!-- ── PROJECT: copy this whole <li> block to add another ───────── -->
+      <!-- ── PROJECT: copy this whole <li> block to add another ─────────
+           Use <a class="project__link" href="..."> when there is somewhere
+           to send people, and <div class="project__link project__link--static">
+           when there isn't — the static variant drops the hover and arrow. -->
       <li class="project reveal">
-        <a class="project__link" href="https://github.com/" target="_blank" rel="noopener">
+        <div class="project__link project__link--static">
           <div class="project__head">
-            <h3 class="project__title">Realtime Sync Engine</h3>
-            <span class="project__year">2025</span>
+            <h3 class="project__title">Dell OpenManage Enterprise</h3>
+            <span class="project__year">2022 — 2026</span>
           </div>
           <p class="project__desc">
-            Conflict-free document sync for a collaborative editor. CRDT-backed,
-            with an append-only op log and a replay tool that made debugging
-            merge bugs a five-minute job instead of a five-hour one.
+            Dell's flagship infrastructure management console, monitoring
+            25,000+ PowerEdge servers from a single pane. Spring Boot
+            microservices behind an Angular 20 Nx monorepo. I onboarded new
+            compute servers, integrated rack controllers, cooling distribution
+            units and power shelves by building device packs on the Redfish
+            DMTF protocol, and contributed to the underlying database design.
           </p>
           <ul class="tags">
-            <li>TypeScript</li><li>Node</li><li>WebSocket</li><li>Postgres</li>
+            <li>Java 17</li><li>Spring Boot</li><li>Angular 20</li><li>Redfish</li><li>Microservices</li>
           </ul>
-          <span class="project__cta">View repository <span aria-hidden="true">→</span></span>
-        </a>
+        </div>
       </li>
       <!-- ─────────────────────────────────────────────────────────────── -->
 
       <li class="project reveal">
-        <a class="project__link" href="https://github.com/" target="_blank" rel="noopener">
+        <a class="project__link" href="https://github.com/SandeepSRathore" target="_blank" rel="noopener">
           <div class="project__head">
-            <h3 class="project__title">Ledger Service</h3>
-            <span class="project__year">2024</span>
+            <h3 class="project__title">Autonomous AI Support Agent</h3>
+            <span class="project__year">Personal</span>
           </div>
           <p class="project__desc">
-            Double-entry accounting service handling payment reconciliation.
-            Idempotent writes, strict invariants enforced at the database level,
-            and a property-test suite that has caught every regression so far.
+            A support agent that closes tickets with no human in the loop. Two
+            services: an MCP server exposing eight business tools — customer
+            lookup, order and payment retrieval, warranty checks, refund
+            issuance, ticket logging — over a normalised MySQL schema, and an
+            agent that polls a mailbox, classifies intent and sentiment, then
+            plans and executes multi-step resolutions for duplicate charges,
+            warranty claims and refunds through an LLM tool-calling loop.
           </p>
           <ul class="tags">
-            <li>Go</li><li>Postgres</li><li>gRPC</li><li>Kafka</li>
+            <li>Java</li><li>Spring AI</li><li>OpenAI</li><li>MCP</li><li>MySQL</li><li>Docker</li>
           </ul>
-          <span class="project__cta">View repository <span aria-hidden="true">→</span></span>
+          <span class="project__cta">View GitHub <span aria-hidden="true">→</span></span>
         </a>
       </li>
 
       <li class="project reveal">
-        <a class="project__link" href="https://github.com/" target="_blank" rel="noopener">
+        <div class="project__link project__link--static">
           <div class="project__head">
-            <h3 class="project__title">Query Console</h3>
-            <span class="project__year">2024</span>
+            <h3 class="project__title">Model Risk Management Platform</h3>
+            <span class="project__year">2019 — 2022</span>
           </div>
           <p class="project__desc">
-            Internal analytics console that let non-engineers answer their own
-            questions. Schema-aware autocomplete, saved queries, and result
-            caching that cut the average warehouse bill by a third.
+            Full-lifecycle model governance, validation and regulatory
+            compliance under OCC SR 11-7, built for Bank of America, Citibank,
+            TIAA and Wells Fargo. Multi-tenant REST APIs secured with OAuth 2.0
+            and JWT, plus Spring Batch pipelines processing over a million
+            records daily. Led a team of four migrating a legacy database of
+            millions of records onto the platform with no interruption to the
+            client's operations.
           </p>
           <ul class="tags">
-            <li>React</li><li>Python</li><li>DuckDB</li><li>Redis</li>
+            <li>Java</li><li>Spring MVC</li><li>Hibernate</li><li>Spring Batch</li><li>OAuth 2.0</li>
           </ul>
-          <span class="project__cta">View repository <span aria-hidden="true">→</span></span>
+        </div>
+      </li>
+
+      <li class="project reveal">
+        <a class="project__link" href="https://abdm.gov.in/partner-offers-details/OQ" target="_blank" rel="noopener">
+          <div class="project__head">
+            <h3 class="project__title">ClinAlly mPower Health</h3>
+            <span class="project__year">2016 — 2018</span>
+          </div>
+          <p class="project__desc">
+            An ABDM-compliant hospital management system with an AI-powered
+            clinical decision support layer, built with AIIMS New Delhi and
+            deployed to hospitals across India. Also used by ASHA health
+            workers nationwide to run field health surveys.
+          </p>
+          <ul class="tags">
+            <li>Java</li><li>HMIS</li><li>ABDM</li><li>CDSS</li>
+          </ul>
+          <span class="project__cta">View on abdm.gov.in <span aria-hidden="true">→</span></span>
         </a>
       </li>
 
       <li class="project reveal">
-        <a class="project__link" href="https://github.com/" target="_blank" rel="noopener">
+        <a class="project__link" href="https://humine.decathlon.in" target="_blank" rel="noopener">
           <div class="project__head">
-            <h3 class="project__title">Deploy Bot</h3>
-            <span class="project__year">2023</span>
+            <h3 class="project__title">Humine V2</h3>
+            <span class="project__year">2019</span>
           </div>
           <p class="project__desc">
-            A CLI and Slack bot that turned a 14-step release checklist into one
-            command, with automatic rollback on failed health checks. Adopted by
-            every team in the org within a quarter.
+            Payroll management and recruiting portal for Decathlon India, built
+            to keep up with fast retail expansion. I was SPOC for the full
+            lifecycle from requirements to deployment, leading three developers
+            and testers. An automated payroll reporting module removed the
+            manual review step entirely, saving seven working days a month.
           </p>
           <ul class="tags">
-            <li>Rust</li><li>Docker</li><li>GitHub Actions</li>
+            <li>Java</li><li>Spring</li><li>MySQL</li><li>Payroll</li>
           </ul>
-          <span class="project__cta">View repository <span aria-hidden="true">→</span></span>
+          <span class="project__cta">Visit humine.decathlon.in <span aria-hidden="true">→</span></span>
         </a>
+      </li>
+
+      <li class="project reveal">
+        <div class="project__link project__link--static">
+          <div class="project__head">
+            <h3 class="project__title">OME Assist</h3>
+            <span class="project__year">2025</span>
+          </div>
+          <p class="project__desc">
+            Winner, PAN India Agentic AI Hackathon at Dell Technologies. An
+            AI agent that lets customers query the OpenManage Enterprise
+            platform conversationally and get an answer in seconds, instead of
+            searching documentation or escalating to support.
+          </p>
+          <ul class="tags">
+            <li>Agentic AI</li><li>Spring AI</li><li>LLM</li><li>RAG</li>
+          </ul>
+        </div>
       </li>
 
     </ol>
 
     <p class="section__more reveal">
-      <a href="https://github.com/" target="_blank" rel="noopener">Everything else on GitHub <span aria-hidden="true">→</span></a>
+      <a href="https://github.com/SandeepSRathore" target="_blank" rel="noopener">Everything else on GitHub <span aria-hidden="true">→</span></a>
     </p>
   </section>
 
@@ -182,20 +234,27 @@
     <div class="prose reveal">
       <!-- EDIT: two or three short paragraphs. Write like you talk. -->
       <p>
-        I'm a software developer who likes problems with a correct answer —
-        the kind where you can write the test first and know when you're done.
-        Most of my work has been backend: APIs, data pipelines, and the
-        infrastructure that keeps them upright.
+        I'm a senior Java and full stack engineer based in Bangalore, ten years
+        into building enterprise web applications, microservices and REST APIs.
+        Most of that time has been spent in places where downtime is expensive
+        — datacenter infrastructure management, banking, and healthcare.
       </p>
       <p>
-        I care about code that the next person can read. That usually means
-        fewer abstractions than feel clever at the time, names that say what
-        they mean, and tests that describe behaviour rather than implementation.
+        A lot of my best work has been modernisation rather than greenfield.
+        I led a team of four through a full stack upgrade of Dell's OpenManage
+        Enterprise platform — Hibernate 5 to 6, Spring 5 to 6, Spring Boot 2 to
+        3, Java 11 to 17, and the whole <code>javax</code> to <code>jakarta</code>
+        namespace migration — which improved performance by 20–30% and closed
+        out most of the platform's open security vulnerabilities.
       </p>
       <p>
-        Outside of work I read about distributed systems, maintain a few small
-        open-source tools, and am always happy to talk through a gnarly
-        architecture problem.
+        More recently I've been putting LLMs into production rather than demos:
+        Spring AI, MCP, RAG and vector search. I built an automated defect
+        resolver that takes a Jira ID, pulls the details over MCP, performs root
+        cause analysis and proposes a fix, and won Dell's PAN India Agentic AI
+        Hackathon with OME Assist. I'm a Certified Scrum Master, have run Scrum
+        for teams of six to eight, and hold a B.Tech in Electronics and
+        Communication Engineering.
       </p>
     </div>
   </section>
@@ -208,19 +267,27 @@
     <div class="stackgrid">
       <div class="stackgroup reveal">
         <h3>Languages</h3>
-        <ul><li>TypeScript</li><li>Python</li><li>Go</li><li>Rust</li><li>SQL</li></ul>
+        <ul><li>Java 8 / 11 / 17 / 21</li><li>Python</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>Go</li></ul>
       </div>
       <div class="stackgroup reveal">
         <h3>Frameworks</h3>
-        <ul><li>React</li><li>Next.js</li><li>Node</li><li>FastAPI</li><li>Express</li></ul>
+        <ul><li>Spring Boot</li><li>Spring Cloud</li><li>Spring Batch</li><li>Spring Security</li><li>Hibernate (JPA)</li><li>Jakarta EE</li><li>Angular</li></ul>
       </div>
       <div class="stackgroup reveal">
-        <h3>Data</h3>
-        <ul><li>Postgres</li><li>Redis</li><li>Kafka</li><li>DuckDB</li><li>Elasticsearch</li></ul>
+        <h3>AI &amp; Agents</h3>
+        <ul><li>Spring AI</li><li>MCP</li><li>RAG</li><li>Qdrant</li><li>LLM integration</li><li>Tool calling</li></ul>
       </div>
       <div class="stackgroup reveal">
-        <h3>Infrastructure</h3>
-        <ul><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>Terraform</li><li>GitHub Actions</li></ul>
+        <h3>Data &amp; Messaging</h3>
+        <ul><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Redis</li><li>Apache Kafka</li><li>TimescaleDB</li><li>OpenSearch</li></ul>
+      </div>
+      <div class="stackgroup reveal">
+        <h3>Cloud &amp; Ops</h3>
+        <ul><li>AWS</li><li>Docker</li><li>Kubernetes</li><li>Jenkins</li><li>Prometheus</li><li>Grafana</li><li>Jaeger</li></ul>
+      </div>
+      <div class="stackgroup reveal">
+        <h3>Testing</h3>
+        <ul><li>JUnit 5</li><li>Mockito</li><li>Jest</li><li>Cypress</li><li>JaCoCo</li><li>SonarQube</li></ul>
       </div>
     </div>
   </section>
@@ -232,39 +299,59 @@
     <ol class="timeline">
       <!-- ── ROLE: copy this <li> to add another ──────────────────────── -->
       <li class="role reveal">
-        <div class="role__when">2023 — Present</div>
+        <div class="role__when">2022 — 2026</div>
         <div class="role__what">
-          <h3>Senior Software Engineer</h3>
-          <p class="role__where">Company Name</p>
+          <h3>Software Senior Engineer</h3>
+          <p class="role__where">Dell Technologies</p>
           <p class="role__desc">
-            Own the payments and reconciliation services. Led the migration off
-            a monolithic billing job to an event-driven ledger, cutting
-            month-end close from three days to four hours.
+            Built OpenManage Enterprise, Dell's high-availability infrastructure
+            management console. Led the platform's tech stack upgrade, ran Scrum
+            for a team of six to eight as rotational Scrum Master, and shipped
+            AI tooling across the org — an automated defect resolver driven by
+            Jira and MCP, plus AI analysis of Sonar, Blackduck and Jenkins
+            build failures.
           </p>
         </div>
       </li>
       <!-- ─────────────────────────────────────────────────────────────── -->
 
       <li class="role reveal">
-        <div class="role__when">2021 — 2023</div>
+        <div class="role__when">2019 — 2022</div>
         <div class="role__what">
-          <h3>Software Engineer</h3>
-          <p class="role__where">Company Name</p>
+          <h3>Lead Software Engineer</h3>
+          <p class="role__where">Deloitte USI</p>
           <p class="role__desc">
-            Built and ran the internal data platform. Shipped the query console
-            that eventually replaced most of the analytics team's ticket queue.
+            Led development of the Model Risk Management platform for Bank of
+            America, Citibank, TIAA and Wells Fargo. Designed the multi-tenant
+            REST APIs and batch pipelines, and automated weekly reporting that
+            had been costing roughly thirty hours a month by hand.
           </p>
         </div>
       </li>
 
       <li class="role reveal">
-        <div class="role__when">2020 — 2021</div>
+        <div class="role__when">2019</div>
         <div class="role__what">
-          <h3>Junior Developer</h3>
-          <p class="role__where">Company Name</p>
+          <h3>Senior Software Engineer</h3>
+          <p class="role__where">Iglulabs Softwares</p>
           <p class="role__desc">
-            Full-stack product work on a customer-facing React app. Learned more
-            from the code reviews here than from anything since.
+            Built Humine V2, the payroll and recruiting portal behind
+            Decathlon India's retail expansion. Single point of contact for the
+            whole product lifecycle, leading a team of three.
+          </p>
+        </div>
+      </li>
+
+      <li class="role reveal">
+        <div class="role__when">2016 — 2018</div>
+        <div class="role__what">
+          <h3>Software Developer</h3>
+          <p class="role__where">Data Template Infotech</p>
+          <p class="role__desc">
+            Delivered 15+ projects across healthcare, automotive and marketing,
+            and became the go-to engineer for proof-of-concept builds and client
+            pitches. Mentored two developers, and pushed the team's range
+            outward into blockchain and Web3.
           </p>
         </div>
       </li>
@@ -276,15 +363,16 @@
     <h2 class="section__title reveal"><span class="section__num">05</span> Contact</h2>
     <div class="contact reveal">
       <p class="contact__lede">
-        Open to interesting problems, contract work, and the occasional
-        long conversation about database indexes.
+        Based in Bangalore and available immediately. Open to senior full stack
+        and AI engineering roles — and always happy to talk through a gnarly
+        migration or an agent design.
       </p>
       <!-- EDIT: your email -->
       <a class="contact__mail" href="mailto:sandeeprathore9211@gmail.com">sandeeprathore9211@gmail.com</a>
       <div class="hero__links">
-        <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
-        <a class="btn" href="https://linkedin.com/in/" target="_blank" rel="noopener">LinkedIn ↗</a>
-        <a class="btn" href="https://x.com/" target="_blank" rel="noopener">X ↗</a>
+        <a class="btn" href="https://github.com/SandeepSRathore" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="https://linkedin.com/in/isandeeprathore" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a class="btn" href="https://stackoverflow.com/users/6572971/sandeep" target="_blank" rel="noopener">Stack Overflow ↗</a>
       </div>
     </div>
   </section>

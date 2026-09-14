@@ -22,13 +22,18 @@ Because the site is served from a `/portfolio/` sub-path, **every internal
 path must stay relative** (`assets/css/styles.css`, never `/assets/...`).
 A leading slash will 404 in production while still working locally.
 
-## Content is placeholder
+## Content is real
 
-The projects, job entries, stats and stack list are invented placeholders,
-not real history. Do not add more invented work, and do not present any of it
-as fact. Spots that need the owner's input are marked `EDIT:` in `index.html`.
-If a task needs real project details you do not have, say so rather than
-filling the gap with plausible-sounding content.
+The projects, roles, stats and stack come from Sandeep's CV and are factual.
+Do not invent work, metrics, employers or dates, and do not embellish what is
+already there. If a task needs details the page does not contain, say so
+rather than filling the gap with plausible-sounding content.
+
+Not every project has a public URL. Those use
+`<div class="project__link project__link--static">` in place of an `<a>`,
+which drops the hover state and the arrow. Do not invent a destination just
+to make the list uniform — Dell's OpenManage Enterprise has no working public
+product page, which is why it is deliberately unlinked.
 
 ## Conventions
 
